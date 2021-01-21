@@ -1,0 +1,341 @@
+/*===========================
+           FLEXBOX
+===========================*/
+
+.left{
+  text-align:left;
+}
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.flex{
+  display: flex;
+}
+
+.container-1{
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.title,
+.description,
+.subtitle{
+  align-self: center;
+}
+
+.header{
+  flex-direction:column;
+  background-color: rgb(34, 34, 46);
+}
+
+.container-2{
+  margin: 10px 10px 0 10px;
+}
+
+.container-3{
+  flex-direction: column;
+}
+
+
+/*===========================
+  CONACT INFO FORM STYLES
+===========================*/
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="tel"],
+textarea,
+.select{
+  padding: 13px;
+  background-color: rgb(236, 236, 236);
+  margin-bottom: 20px;
+  border: none;
+}
+
+
+label{
+  color: rgb(107, 105, 105);
+  padding-bottom: 5px;
+}
+
+.contact{
+  margin-bottom: 30px;
+}
+
+legend{
+  font-size: 23px;
+  font-weight: bold;
+}
+
+
+
+
+
+/*===========================
+  TITLE STYLES
+===========================*/
+.title{
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding:10px 0 10px;
+  font-family: serif;
+  font-weight: lighter;
+}
+
+.subtitle{
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+  margin-bottom:0;
+  text-align:center;
+}
+
+.description{
+  color: rgb(129, 127, 127);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.thick{
+  border: black solid 5px;
+  margin:  0 10px 4px 10px ;
+}
+
+.thin{
+  border: black solid 2px;
+  margin-bottom:10px;
+  margin-top:0;
+  margin:  0 10px 20px 10px ;
+}
+
+/*===========================
+  FOOTER STYLES
+===========================*/
+
+
+.inline{
+  display: inline-block;
+}
+
+input[type="submit"]{
+  background-color: rgb(54, 136, 67);
+  padding: 20px 0 20px 0;
+  margin: 30px 0 20px 0;
+  border-radius: 6px;
+  color:white;
+  border: rgb(54, 136, 67);
+}
+
+p{
+  text-align: center;
+}
+.copyright{
+  font-style: italic;
+  color:rgb(107, 105, 105);
+}
+
+
+/*===========================
+  WHOLE PAGE STYLES
+===========================*/
+
+body{
+  font-family: sans-serif, Arial, Helvetica, serif;
+}
+.container-2{
+margin:0;
+}
+
+.container-1 {
+display: flex;
+flex-direction: column;
+}
+
+
+@media(min-width: 768px){
+
+
+  .container-1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width:75%;
+  }
+
+  body{
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  label{
+    margin-right: 40px;
+  }
+
+  .container-1 input {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+
+  .container-1{
+    width:100%;
+    margin: 0;
+  }
+  .container-1 .flex-pair {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin: 0;
+  }
+
+  .flex-pair1[id="zip"] {
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    flex-shrink: 4;
+  }
+
+  .flex-pair{
+    display:flex;
+    width:75%;
+  }
+  .input{
+    justify-content: flex-end;
+  }
+
+  .container-1 label{
+    width: 20%;
+    margin-top: 10px;
+  }
+
+  .select{
+    width:75%;
+  }
+
+
+
+
+
+}
+
+#user-zip{
+  max-width: 25%;
+}
+
+
+.flex-pair{  
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media(max-width: 768px){
+body {
+  margin: 0;
+}
+}
+
+
+fieldset{
+  width: 100%;
+  border: none;
+}
+
+
+
+form{
+  max-width: 1024px;
+}
+
+
+::placeholder{
+  text-align: right;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+input{
+  text-align: left;
+}
+
+
+.container-1 input:hover{
+  background-color: rgb(243, 237, 237);
+  border: black 0.5px solid;
+}
+
+
+select:hover{
+  background-color: rgb(243, 237, 237);
+  border: black 0.5px solid;
+}
+
+
+fieldset{
+  background-color:rgb(255, 253, 253);
+  border-top: 50px rgb(255, 253, 253) solid;
+  border-bottom: 50px rgb(255, 253, 253) solid;
+}
+
+
+body{
+  background-color: rgb(236, 236, 236);
+}
+
+hr{
+  margin: 0;
+  border: black solid 2px;
+}
+
+input[type="submit"]{
+  text-align:center;
+  font-size: 18px;
+  background-color:rgb(91, 163, 165);
+}
+
+
+.btn,
+input,
+select{
+  font-size: 15px;
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.btn:hover,
+input:hover,
+select:hover {
+  opacity: 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
