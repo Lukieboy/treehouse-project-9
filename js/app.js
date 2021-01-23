@@ -49,16 +49,16 @@ body.addEventListener('click', (e)=>{
             modalSkills.innerHTML ="<h4>Skills Required:</h4><p>HTML5, CSS</p><hr><h4>Grade Recived</h4><p>Exceeds Expectations</p>";
         }
     }
-})
+});
 
 
 const allOverlayText = document.querySelectorAll('.overlay-text');
 
 setInterval(()=>{
     allOverlayText.forEach(element => {
-        element.style.height = `${document.querySelector('.card-img-top').height}px`
+        element.style.height = `${document.querySelector('.card-img-top').height}px`;
     });
-}, 100)
+}, 100);
 
 
 
@@ -77,7 +77,7 @@ body.addEventListener('click', (e)=>{
             }
         }
     }
-})
+});
 
 
 toggleProjects.addEventListener('click', ()=>{
@@ -88,7 +88,7 @@ toggleProjects.addEventListener('click', ()=>{
         projectContainer.style.display = "flex";
         toggleProjects.textContent = "Hide Projects";
     }
-})
+});
 
 
 function checker(){
@@ -99,7 +99,7 @@ function checker(){
     }
 }
 
-label.addEventListener('click', ()=> checker())
+label.addEventListener('click', ()=> checker());
 
 function lightMode(){
     svgFill.style.stroke = "black";
@@ -118,7 +118,7 @@ function lightMode(){
     change[i].style.backgroundColor = "white";
     }
 
-    bgGray.forEach(element => element.style.backgroundColor = "rgb(243, 243, 243)")
+    bgGray.forEach(element => element.style.backgroundColor = "rgb(243, 243, 243)");
 
 }
 
