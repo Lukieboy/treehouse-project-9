@@ -2,7 +2,7 @@
     background:linear-gradient(rgb(46, 46, 122), transparent 90%),
                           linear-gradient(0deg, rgb(255, 255, 255), transparent ),
                         orange url('../images/coding-bg.jpg') no-repeat center;
-    height: 600px;
+    height: 550px;
 }
 *{
     box-sizing: border-box;
@@ -332,5 +332,36 @@ input:checked + .notifications .off{
 
 .github:hover{
     fill: gray;
+    cursor: pointer;
+}
+
+.fill{
+    transform: translateY(50px);
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    75%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+.fill{
+    animation: bounce 1s infinite;
+}
+
+svg:hover{
     cursor: pointer;
 }
